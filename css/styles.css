@@ -136,13 +136,17 @@ color: var(--accent-color);
 color: var(--accent-color);
 }
 
-/* section hero */
+/* HERO*/
 
 .hero{
     background-color: var(--gray-color)
 }
 
 .hero-title {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;
     text-align: center;
     color: var(--white-color);
     font-weight: 900;
@@ -151,7 +155,7 @@ color: var(--accent-color);
     letter-spacing: 0.06em;
 }
 .hero-btn{
-    width: 696px;
+    border-radius: 4px;
     display: block;
     margin: auto;
     font-weight: 700;
@@ -170,17 +174,32 @@ color: var(--accent-color);
 
 /* features */
 .features-title{
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14px;
     color: var(--main-text-color);
 }
+  .features-list{
+    display: flex;
+  }
+
+ .features-item{
+    width: 270px;
+    flex-direction: row;
+    margin-right: 30px;
+ }
+
  .features-text {
      font-size: 14px;
      line-height: 1.7;
  }
 /* section-world */
+
+
 .world-title{
+    margin-bottom: 50px;
+    text-align: center;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -188,8 +207,33 @@ color: var(--accent-color);
 }
 
 
+.world-list{
+    display: flex;
+}
+.world-item{
+    margin-right: 30px;
+}
+
 /* teams */
+.teams{
+background: #F5F4FA;
+}
+
+.teams-list{
+    display: flex;
+    gap: 30px;
+}
+.team-wrapper{
+    padding-top: 30px;
+}
+.teams-item{
+    background-color: var(--white-color);
+    border-radius: 0px 0px 4px 4px;
+    flex-basis: calc((100% - 30px * 2) / 4);
+}
 .teams-title{
+    text-align: center;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -197,12 +241,16 @@ color: var(--accent-color);
 }
 
 .teams-title-name{
+    text-align: center;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;     
     color: var(--main-text-color);
 }
 .team-text{
+    text-align: center;
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.18;
 }
@@ -211,11 +259,26 @@ color: var(--accent-color);
 .footer{
     background-color: var(--gray-color);
 }
+
+.footer-logo{
+   padding-top: 26px;
+   padding-bottom: 20px;
+    margin-right: 93px;
+    display: block;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
 .footer-first-part{
     color: var(--accent-color)
 }
 .footer-last-part{
 color: var(--white-color);
+}
+
+.footer-contacts-list{
+ 
 }
 
 .footer-contacts-link {
@@ -230,6 +293,11 @@ color: var(--white-color);
     line-height: 1.71;      
     color: #FFFFFF;
     font-style: normal;
+}
+
+.footer-container{
+display: block;
+   
 }
 /* gallery-btn */
 .gallery{
