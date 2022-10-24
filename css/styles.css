@@ -181,6 +181,11 @@ color: var(--accent-color);
 
 
 /* features */
+
+.features{
+    padding-bottom: 0;
+}
+
 .features-title{
     margin-bottom: 10px;
     font-weight: 700;
